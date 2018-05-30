@@ -1,0 +1,113 @@
+body {
+  background-color: #D1D2D4;
+}
+
+/* Navigation bar styling */
+
+.custom-nav {
+  background-color: #D1D2D4;
+  max-width: 115px;
+/*   display: inline-block; */
+  float: left;
+}
+
+/* Header styling */
+.header-home {
+  margin: 0 auto;
+/*   background-color: red; */
+  min-height: 538px;
+/*   display: inline-block; */
+}
+
+/* Icon Styling */
+.far, .fas {
+  margin-bottom: 5px;
+    padding: 9px;
+    font-size: 45px;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+  background-color: black;
+}
+
+.custom-nav li {
+  margin: 0 auto;
+}
+
+li a {
+  text-decoration: none;
+  color: #09873E;
+}
+
+li a:hover {
+  color: 	#7CBA41;
+  text-decoration: none;
+}
+
+/* utilize JavaScript to show upon hover for drop-desc */
+.drop-desc {
+  display: none;
+}
+
+/* Header styling */
+.header {
+  margin: 0 auto;
+  min-height: 250px;
+}
+
+#title {
+  margin-left: 125px;
+  margin-top: 45px;
+  position: absolute;
+}
+
+h2 {
+  font-family: Trebuchet MS;
+  font-size: 7em;
+}
+
+h6 {
+  text-align: center;
+}
+
+div.feature {
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-color: white;
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+}
+
+div.feature img {
+  opacity: 0.9;
+  width: 100%;
+}
+
+.img-wrap-home {
+  top: 0;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  position: absolute;
+}
+
+.img-wrap {
+  float: right;
+  max-width: 400px;
+  width: 30%;
+  min-width: 250px;
+}
+
+.img-wrap2 {
+  width: 100%;
+  height: 90%;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+}
