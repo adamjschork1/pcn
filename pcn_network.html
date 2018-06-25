@@ -9,22 +9,21 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="javascript.js"></script>
 </head>
 
-<div class="custom-nav navbar navbar-fixed-left">
+<div class="nav-container">
+  <div class="custom-nav navbar navbar-fixed-left">
     <ul class="nav navbar-nav">
-      <li><a class="far fa-building" href="pcn_home.html"></a></li>
-      <li class="drop-desc">home</li>
-
-      <li><a class="fas fa-globe" href="pcn_network.html"></a></li>
-      <li class="drop-desc">network</li>
-
-
-      <li><a class="far fa-envelope" href="pcn_contact.html"></a></li>
-      <li class="drop-desc">contact</li>
-
+      <li><a class="far fa-building" href="pcn_home.html" onMouseover="navHover('home', 'navHoverBox');" onMouseout="styleRevert('home', 'drop-desc');"></a></li>
+      <li><a class="fas fa-globe" href="pcn_network.html" onMouseover="navHover('title', 'title-hover');" onMouseout="styleRevert('title', 'title');"></a></li>
+      <li><a class="far fa-envelope" href="pcn_contact.html" onMouseover="navHover('contact', 'navHoverBox');" onMouseout="styleRevert('contact', 'drop-desc');"></a></li>
     </ul>
   </div>
+    <div id="home" class="drop-desc">home</div>
+    <div id="" class="drop-desc">network</div>
+    <div id="contact" class="drop-desc">contact</div>
+</div>
 
 <div class="header">
   <div class="img-wrap">
@@ -37,76 +36,13 @@
 
 </div>
 
-<div class="body">
-
-  <div class="feature">
-    <h6>Mady Gardner</h6>
-    <div class="img-wrap2">
-    <img src="https://image.ibb.co/dQkv2R/mady1.jpg">
-      </div>
-  </div>
-
-  <div class="feature">
-    <h6>Adam Schork</h6>
-    <div class="img-wrap2">
-    <img src="https://photos.zillowstatic.com/h_j/ISp5hiqj17vt6w0000000000.jpg">
-    </div>
-  </div>
-
-  <div class="feature">
-    <h6>Johnny Dudo</h6>
-    <div class="img-wrap2">
-    <img src="https://image.ibb.co/comG1H/network2.jpg">
-    </div>
-  </div>
-
-  <div class="feature">
-    <h6>Mary Maluto</h6>
-    <div class="img-wrap2">
-    <img src="https://image.ibb.co/comG1H/network2.jpg">
-    </div>
-  </div>
-
-  <div class="feature">
-    <h6>Kevin Lin</h6>
-    <div class="img-wrap2">
-    <img src="https://image.ibb.co/comG1H/network2.jpg">
-    </div>
-  </div>
-
-  <div class="feature">
-    <h6>Lilian Lakshmi</h6>
-    <div class="img-wrap2">
-    <img src="https://image.ibb.co/comG1H/network2.jpg">
-    </div>
-  </div>
-
-  <div class="feature">
-    <h6>Terrance Terminate</h6>
-    <div class="img-wrap2">
-    <img src="https://image.ibb.co/comG1H/network2.jpg">
-    </div>
-  </div>
-
-  <div class="feature">
-    <h6>Vallerie Vascular</h6>
-    <div class="img-wrap2">
-    <img src="https://image.ibb.co/comG1H/network2.jpg">
-    </div>
-  </div>
-
-  <div class="feature">
-    <h6>Benny Benito</h6>
-    <div class="img-wrap2">
-    <img src="https://image.ibb.co/comG1H/network2.jpg">
-    </div>
-  </div>
-
-  <div class="feature">
-    <h6>Alice Aspartate</h6>
-    <div class="img-wrap2">
-    <img src="https://image.ibb.co/comG1H/network2.jpg">
-    </div>
-  </div>
+<div id="network-content">
+  <h6>Currently under construction</h6>
 </div>
+
+
+
+<footer>
+    <p>Made by <a href="http://www.portlandwebstudio.com" target="_blank">Portland Web Studio</a></p>
+</footer>
 </html>

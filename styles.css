@@ -1,35 +1,28 @@
+/* Universal Styles */
+
 body {
   background-color: #D1D2D4;
 }
 
-/* Navigation bar styling */
-
-.custom-nav {
-  background-color: #D1D2D4;
-  max-width: 115px;
-/*   display: inline-block; */
-  float: left;
+footer {
+  width: 100%;
+  background-color: gray;
+  margin-top: 50px;
+  padding: 20px 20px 10px;
+  text-align: right;
 }
 
-/* Header styling */
-.header-home {
-  margin: 0 auto;
-/*   background-color: red; */
-  min-height: 538px;
-/*   display: inline-block; */
-}
-
-/* Icon Styling */
+/* Navigation Icon Styling */
 .far, .fas {
-  margin-bottom: 5px;
-    padding: 9px;
-    font-size: 45px;
-    width: 65px;
-    height: 65px;
+    margin-bottom: 5px;
+    padding: 6px;
+    font-size: 40px;
+    width: 55px;
+    height: 53px;
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
-  background-color: black;
+    background-color: black;
 }
 
 .custom-nav li {
@@ -46,9 +39,46 @@ li a:hover {
   text-decoration: none;
 }
 
-/* utilize JavaScript to show upon hover for drop-desc */
+/* Utilizes Javascript to hide navigation icon descriptions */
+
 .drop-desc {
   display: none;
+}
+
+/* Navigation bar styling */
+
+.custom-nav {
+  background-color: #D1D2D4;
+  max-width: 115px;
+  float: left;
+}
+
+/* Header styling */
+.header-home {
+  margin: 0 auto;
+  min-height: 538px;
+}
+/* Home page content adjustments with scaling */
+.spacer {
+  min-height: 500px;
+}
+@media (max-width: 1111px) {
+  .spacer {
+      min-height: 450px;
+  }
+}
+@media (max-width: 930px) {
+  .spacer {
+      min-height: 380px;
+  }
+}
+@media (max-width: 630px) {
+  .spacer {
+      min-height: 250px;
+  }
+  #main-content {
+    text-align: justify;
+  }
 }
 
 /* Header styling */
@@ -59,55 +89,148 @@ li a:hover {
 
 #title {
   margin-left: 125px;
-  margin-top: 45px;
+  margin-top: 58px;
   position: absolute;
+}
+@media (max-width: 550px) {
+  #title {
+    margin-top: 130px;
+    margin-left: 220px;
+  }
+  h2 {
+      font-size: 36px !important;
+    }
 }
 
 h2 {
   font-family: Trebuchet MS;
-  font-size: 7em;
+  font-size: 60px;
 }
 
 h6 {
   text-align: center;
 }
-
-div.feature {
-  display: inline-block;
-  position: relative;
-  border-radius: 10px;
-  margin-left: 15px;
-  margin-top: 15px;
-  background-color: white;
-  width: 250px;
-  height: 250px;
-  padding: 10px;
-}
-
-div.feature img {
-  opacity: 0.9;
-  width: 100%;
-}
-
+/* Home img logo */
 .img-wrap-home {
   top: 0;
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
   position: absolute;
+  max-width: 700px;
+}
+
+/* Main image / logo animation upon page load */
+
+#logo-anim {
+  animation-name: logo-change;
+  animation-duration: 3.5s;
+}
+@keyframes logo-change {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .img-wrap {
   float: right;
-  max-width: 400px;
+  max-width: 347px;
   width: 30%;
   min-width: 250px;
 }
 
-.img-wrap2 {
+.navHoverBox {
+  margin-left: 60px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  font-size: 18px;
+  color: green;
+  position: fixed;
+  z-index: 1;
+}
+
+.title-hover {
+  color: green;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #7CBA41;
+}
+
+/* For Network Page */
+#network-content {
   width: 100%;
-  height: 90%;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+/* Contact Page */
+
+#contact-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+label {
+  font-size: 18px;
+  font-family: arial;
+}
+
+.contact-page {
+  font-size: 18px;
+  font-family: arial;
+  margin-left: 17%;
+  margin-right: 17%;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+.text-field {
   border-radius: 10px;
-  overflow: hidden;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  margin-top: 5px;
+}
+@media (max-width: 820px) {
+  .text-field {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .label-bump {
+   margin-left: 10%;
+  }
+}
+
+input[type="submit"]:hover {
+  background-color: #7CBA41;
+}
+
+input[type="submit"] {
+  border-radius: 10px;
+  padding: 5px;
+  min-width: 90px;
+  font-family: arial;
 }

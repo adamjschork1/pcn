@@ -9,30 +9,52 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="javascript.js"></script>
 </head>
 
-  <div class="custom-nav navbar navbar-fixed-left">
-    <ul class="nav navbar-nav">
-      <li><a class="far fa-building" href="pcn_home.html"></a></li>
-      <li class="drop-desc">home</li>
+<div class="nav-container">
+<div class="custom-nav navbar navbar-fixed-left">
+  <ul class="nav navbar-nav">
+    <li><a class="far fa-building" href="pcn_home.html" onMouseover="navHover('home', 'navHoverBox');" onMouseout="styleRevert('home', 'drop-desc');"></a></li>
+    <li><a class="fas fa-globe" href="pcn_network.html" onMouseover="navHover('network', 'navHoverBox');" onMouseout="styleRevert('network', 'drop-desc');"></a></li>
+    <li><a class="far fa-envelope" href="pcn_contact.html" onMouseover="navHover('title', 'title-hover');" onMouseout="styleRevert('title', 'title');"></a></li>
+  </ul>
+</div>
+  <div id="home" class="drop-desc">home</div>
+  <div id="network" class="drop-desc">network</div>
+  <div id="contact" class="drop-desc">contact</div>
+</div>
 
-      <li><a class="fas fa-globe" href="pcn_network.html"></a></li>
-      <li class="drop-desc">network</li>
-
-
-      <li><a class="far fa-envelope" href="pcn_contact.html"></a></li>
-      <li class="drop-desc">contact</li>
-
-    </ul>
-  </div>
-
-  <div class="header">
-  <div class="img-wrap">
-  <img src="https://image.ibb.co/comG1H/network2.jpg" alt="portland coder's network" width="100%"></img>
+<div class="header">
+<div class="img-wrap">
+<img src="https://image.ibb.co/comG1H/network2.jpg" alt="portland coder's network" width="100%"></img>
 </div>
 
 <div id="title">
-  <h2>Contact</h2>
+<h2>Contact</h2>
 </div>
 
 </div>
+
+<div id="contact-form">
+
+<p class="contact-page">Looking to contribute, need resources or have a question? Send us a message! This website was created by volunteers and is a free resource. If you solicit you might mysteriously get hacked.</p>
+
+<form onSubmit="checkName('name')">
+<label><span class="label-bump">Name</span><br><input id="name" class="text-field" type="text" name="name" size="99" maxlength="99" onFocus="this.style.backgroundColor = '#dfffd3';" onBlur="this.style.backgroundColor = 'white';"></label>
+    <br>
+<label><span class="label-bump">Email</span><br><input class="text-field" type="email" name="email" size="99" maxlength="99" onFocus="this.style.backgroundColor = '#dfffd3';" onBlur="this.style.backgroundColor = 'white';"></label>
+    <br>
+<label><span class="label-bump">Message</span><br><textarea class="text-field" name="message" rows="10" cols="98" onFocus="this.style.backgroundColor = '#dfffd3';" onBlur="this.style.backgroundColor = 'white';"></textarea></label>
+  <br>
+<span class="label-bump"><input type="submit" value="Submit"></span>
+</form>
+
+</div>
+
+
+<footer>
+  <p>Made by <a href="http://www.portlandwebstudio.com" target="_blank">Portland Web Studio</a></p>
+</footer>
+
+</html>
